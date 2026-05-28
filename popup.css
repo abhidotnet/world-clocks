@@ -1,0 +1,260 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Dark theme (default) ── */
+:root,
+[data-theme="dark"] {
+  --bg: #0f0f1a;
+  --text: #e0e0f0;
+  --accent: #c9b8ff;
+  --btn-bg: #1e1e35;
+  --btn-border: #3a3a5c;
+  --btn-hover: #2e2e50;
+  --card-bg: #1a1a2e;
+  --card-border: #2a2a4a;
+  --label: #9b8ec4;
+  --time: #ffffff;
+  --date: #6a6a9a;
+  --panel-bg: #13132a;
+  --hint: #555580;
+  --item-bg: #1e1e38;
+  --item-border: #2e2e50;
+  --item-label: #dddddd;
+  --item-zone: #666666;
+  --drag-handle: #444444;
+  --input-bg: #1e1e38;
+  --input-border: #3a3a5c;
+  --input-text: #dddddd;
+  --primary: #6c4fff;
+  --primary-hover: #7d63ff;
+  --drag-over-bg: #252545;
+  --close-btn: #888888;
+  --analog-face: #1a1a2e;
+  --analog-border: #3a3a6a;
+  --analog-tick: #4a4a7a;
+  --analog-hour: #c9b8ff;
+  --analog-minute: #a0d0ff;
+  --analog-second: #ff6b6b;
+  --analog-center: #ffffff;
+}
+
+/* ── Light theme ── */
+[data-theme="light"] {
+  --bg: #f4f4f8;
+  --text: #1a1a2e;
+  --accent: #5b3fd4;
+  --btn-bg: #ffffff;
+  --btn-border: #d0d0e0;
+  --btn-hover: #ebebf5;
+  --card-bg: #ffffff;
+  --card-border: #d8d8e8;
+  --label: #6b5b9a;
+  --time: #12122a;
+  --date: #7a7a9a;
+  --panel-bg: #ffffff;
+  --hint: #8888a8;
+  --item-bg: #f8f8fc;
+  --item-border: #d8d8e8;
+  --item-label: #222233;
+  --item-zone: #888899;
+  --drag-handle: #aaaaaa;
+  --input-bg: #ffffff;
+  --input-border: #c8c8d8;
+  --input-text: #222233;
+  --primary: #5b3fd4;
+  --primary-hover: #6d52e0;
+  --drag-over-bg: #ede9ff;
+  --close-btn: #666666;
+  --analog-face: #ffffff;
+  --analog-border: #c8c8d8;
+  --analog-tick: #b0b0c8;
+  --analog-hour: #5b3fd4;
+  --analog-minute: #2a7ab8;
+  --analog-second: #e04545;
+  --analog-center: #12122a;
+}
+
+body {
+  width: 520px;
+  min-height: 200px;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app { padding: 12px 14px 16px; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+header h1 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+}
+
+.header-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+
+.header-actions button {
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+  color: var(--accent);
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+.header-actions button:hover { background: var(--btn-hover); }
+
+/* ── Clock Grid ── */
+.clock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.clock-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 12px 8px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.clock-card .tz-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--label);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+.clock-card .tz-time {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--time);
+  letter-spacing: 1px;
+  font-variant-numeric: tabular-nums;
+}
+
+.clock-card .tz-date {
+  font-size: 10px;
+  color: var(--date);
+}
+
+/* ── Analog Clock ── */
+.analog-clock {
+  width: 90px;
+  height: 90px;
+}
+
+/* ── Settings Panel ── */
+.settings-panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 10px;
+}
+
+.settings-panel.hidden { display: none; }
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.settings-header h2 { font-size: 14px; color: var(--accent); }
+
+.settings-header button {
+  background: none;
+  border: none;
+  color: var(--close-btn);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.settings-hint {
+  font-size: 11px;
+  color: var(--hint);
+  margin-bottom: 10px;
+}
+
+.tz-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 12px;
+}
+
+.tz-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--item-bg);
+  border: 1px solid var(--item-border);
+  border-radius: 8px;
+  padding: 7px 10px;
+  cursor: grab;
+  font-size: 13px;
+  gap: 8px;
+}
+
+.tz-item .drag-handle { color: var(--drag-handle); font-size: 14px; }
+.tz-item .tz-item-label { flex: 1; color: var(--item-label); font-weight: 600; }
+.tz-item .tz-item-zone { font-size: 11px; color: var(--item-zone); }
+
+.tz-item .remove-btn {
+  background: none;
+  border: none;
+  color: #e05;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 2px;
+}
+
+.add-tz {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.add-tz select, .add-tz input {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--input-text);
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.add-tz button {
+  background: var(--primary);
+  border: none;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.add-tz button:hover { background: var(--primary-hover); }
+
+/* drag over highlight */
+.tz-item.drag-over { border-color: var(--primary); background: var(--drag-over-bg); }

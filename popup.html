@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Clocks</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🌍 World Clocks</h1>
+      <div class="header-actions">
+        <button id="toggleTheme" title="Toggle light/dark theme">☀ Light</button>
+        <button id="toggleMode" title="Toggle analog/digital">⏱ Digital</button>
+        <button id="openSettings" title="Manage timezones">⚙ Manage</button>
+      </div>
+    </header>
+
+    <div id="clockGrid" class="clock-grid"></div>
+
+    <!-- Settings Panel -->
+    <div id="settingsPanel" class="settings-panel hidden">
+      <div class="settings-header">
+        <h2>Manage Timezones</h2>
+        <button id="closeSettings">✕</button>
+      </div>
+      <p class="settings-hint">Up to 12 timezones. Drag to reorder.</p>
+      <ul id="tzList" class="tz-list"></ul>
+      <div class="add-tz">
+        <select id="tzSelect"></select>
+        <input type="text" id="tzLabel" placeholder="Label (e.g. Tokyo)" maxlength="20"/>
+        <button id="addTz">+ Add</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

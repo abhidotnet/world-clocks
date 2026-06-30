@@ -144,6 +144,12 @@ header h1 {
   color: var(--time);
   letter-spacing: 1px;
   font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+[data-clock-format="12"] .clock-card .tz-time {
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
 .clock-card .tz-date {

@@ -133,17 +133,21 @@ const DEFAULT_TIMEZONES = [
   // ── State ──────────────────────────────────────────────────────────────────
   let timezones = [];
   let isAnalog = false;
+  let use24Hour = true;
   let theme = "dark";
   let tickInterval = null;
   let dragSrcIndex = null;
   
   // ── Init ───────────────────────────────────────────────────────────────────
-  chrome.storage.local.get(["timezones", "isAnalog", "theme"], (data) => {
+  chrome.storage.local.get(["timezones", "isAnalog", "use24Hour", "theme"], (data) => {
     timezones = data.timezones && data.timezones.length ? data.timezones : DEFAULT_TIMEZONES;
     isAnalog  = data.isAnalog || false;
+    use24Hour = data.use24Hour !== false;
     theme     = data.theme === "light" ? "light" : "dark";
     applyTheme();
+    applyClockFormat();
     updateToggleBtn();
+    updateClockFormatBtn();
     updateThemeBtn();
     renderClocks();
     startTick();
@@ -189,6 +193,30 @@ const DEFAULT_TIMEZONES = [
   
   function updateToggleBtn() {
     document.getElementById("toggleMode").textContent = isAnalog ? "⏱ Digital" : "🕐 Analog";
+  }
+
+  // ── Toggle 12h / 24h (digital clocks) ────────────────────────────────────
+  document.getElementById("toggleClockFormat").addEventListener("click", () => {
+    use24Hour = !use24Hour;
+    applyClockFormat();
+    updateClockFormatBtn();
+    save();
+    if (!isAnalog) tick();
+  });
+
+  function applyClockFormat() {
+    document.documentElement.dataset.clockFormat = use24Hour ? "24" : "12";
+  }
+
+  function updateClockFormatBtn() {
+    const btn = document.getElementById("toggleClockFormat");
+    if (use24Hour) {
+      btn.textContent = "12h";
+      btn.title = "Switch to 12-hour clock";
+    } else {
+      btn.textContent = "24h";
+      btn.title = "Switch to 24-hour clock";
+    }
   }
   
   // ── Settings panel ─────────────────────────────────────────────────────────
@@ -251,8 +279,8 @@ const DEFAULT_TIMEZONES = [
   // ── Time helpers ───────────────────────────────────────────────────────────
   function getTime(zone, now) {
     return now.toLocaleTimeString("en-US", {
-      timeZone: zone, hour: "2-digit", minute: "2-digit", second: "2-digit",
-      hour12: false
+      timeZone: zone, hour: "numeric", minute: "2-digit", second: "2-digit",
+      hour12: !use24Hour
     });
   }
   
@@ -410,5 +438,5 @@ const DEFAULT_TIMEZONES = [
   
   // ── Persist ────────────────────────────────────────────────────────────────
   function save() {
-    chrome.storage.local.set({ timezones, isAnalog, theme });
+    chrome.storage.local.set({ timezones, isAnalog, use24Hour, theme });
   }

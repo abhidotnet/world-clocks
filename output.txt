@@ -1,0 +1,246 @@
+ Volume in drive C is OS
+ Volume Serial Number is F06F-E751
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks
+
+05/28/2026  04:02 PM    <DIR>          .
+05/28/2026  12:55 PM    <DIR>          ..
+05/28/2026  01:17 PM    <DIR>          icons
+05/28/2026  12:56 PM               403 manifest.json
+05/28/2026  04:02 PM                 0 output.txt
+05/28/2026  01:25 PM             5,578 popup.css
+05/28/2026  01:25 PM             1,311 popup.html
+05/28/2026  01:37 PM            21,390 popup.js
+05/28/2026  01:22 PM             2,613 README.md
+               6 File(s)         31,295 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git
+
+05/28/2026  04:02 PM    <DIR>          ..
+05/28/2026  02:33 PM                13 COMMIT_EDITMSG
+05/28/2026  02:33 PM               305 config
+05/28/2026  02:32 PM                73 description
+05/28/2026  02:32 PM                21 HEAD
+05/28/2026  02:32 PM    <DIR>          hooks
+05/28/2026  02:33 PM               711 index
+05/28/2026  02:32 PM    <DIR>          info
+05/28/2026  02:33 PM    <DIR>          logs
+05/28/2026  02:33 PM    <DIR>          objects
+05/28/2026  02:33 PM    <DIR>          refs
+               5 File(s)          1,123 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\hooks
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:32 PM               478 applypatch-msg.sample
+05/28/2026  02:32 PM               896 commit-msg.sample
+05/28/2026  02:32 PM             4,726 fsmonitor-watchman.sample
+05/28/2026  02:32 PM               189 post-update.sample
+05/28/2026  02:32 PM               424 pre-applypatch.sample
+05/28/2026  02:32 PM             1,649 pre-commit.sample
+05/28/2026  02:32 PM               416 pre-merge-commit.sample
+05/28/2026  02:32 PM             1,374 pre-push.sample
+05/28/2026  02:32 PM             4,898 pre-rebase.sample
+05/28/2026  02:32 PM               544 pre-receive.sample
+05/28/2026  02:32 PM             1,492 prepare-commit-msg.sample
+05/28/2026  02:32 PM             2,783 push-to-checkout.sample
+05/28/2026  02:32 PM             2,308 sendemail-validate.sample
+05/28/2026  02:32 PM             3,650 update.sample
+              14 File(s)         25,827 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\info
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:32 PM               240 exclude
+               1 File(s)            240 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\logs
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:33 PM               172 HEAD
+05/28/2026  02:33 PM    <DIR>          refs
+               1 File(s)            172 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\logs\refs
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:33 PM    <DIR>          heads
+05/28/2026  02:33 PM    <DIR>          remotes
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\logs\refs\heads
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:33 PM               172 main
+               1 File(s)            172 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\logs\refs\remotes
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:33 PM    <DIR>          origin
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\logs\refs\remotes\origin
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:33 PM               156 main
+               1 File(s)            156 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:32 PM    <DIR>          0f
+05/28/2026  02:32 PM    <DIR>          26
+05/28/2026  02:32 PM    <DIR>          45
+05/28/2026  02:32 PM    <DIR>          75
+05/28/2026  02:33 PM    <DIR>          76
+05/28/2026  02:32 PM    <DIR>          7a
+05/28/2026  02:33 PM    <DIR>          85
+05/28/2026  02:32 PM    <DIR>          8c
+05/28/2026  02:33 PM    <DIR>          92
+05/28/2026  02:32 PM    <DIR>          9f
+05/28/2026  02:32 PM    <DIR>          f6
+05/28/2026  02:32 PM    <DIR>          info
+05/28/2026  02:32 PM    <DIR>          pack
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\0f
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:32 PM             5,895 01283aed9f5a89d85f7c6d60f1fadeff08d336
+               1 File(s)          5,895 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\26
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:32 PM               643 ec0ca68f58e7a0552e4683025daf48053ba941
+               1 File(s)            643 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\45
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:32 PM            34,507 5f23f8a91587ae3485bb807e822b8b206d54f2
+               1 File(s)         34,507 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\75
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:32 PM               232 fed12548a322c344886ea0e1fa971b96044f1f
+               1 File(s)            232 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\76
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:33 PM               211 7e155996da3932dcae01a360ff183e369e5fb9
+               1 File(s)            211 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\7a
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:32 PM             1,815 40dcdae8f829186d4b7a3ffe7399e008fde076
+               1 File(s)          1,815 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\85
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:33 PM               132 a326ea46d9ebcb22b40682905c4351e6341dc7
+               1 File(s)            132 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\8c
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:32 PM               857 7891597f9790a4b83d9fa881353bcd24181675
+               1 File(s)            857 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\92
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:33 PM               109 a6749a72263bd1ddfb77ead00a485e3e417d68
+               1 File(s)            109 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\9f
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:32 PM             1,355 ec9e5594fff5d3b3deaca45d71e759f5292377
+               1 File(s)          1,355 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\f6
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:32 PM             6,607 77c8c27a1d0c7e3f30b4efddf174953284a99a
+               1 File(s)          6,607 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\info
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\objects\pack
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\refs
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          heads
+05/28/2026  02:33 PM    <DIR>          remotes
+05/28/2026  02:32 PM    <DIR>          tags
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\refs\heads
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:33 PM                41 main
+               1 File(s)             41 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\refs\remotes
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:33 PM    <DIR>          origin
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\refs\remotes\origin
+
+05/28/2026  02:33 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+05/28/2026  02:33 PM                41 main
+               1 File(s)             41 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\.git\refs\tags
+
+05/28/2026  02:32 PM    <DIR>          .
+05/28/2026  02:33 PM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Abhijit\Documents\world-clocks\icons
+
+05/28/2026  01:17 PM    <DIR>          .
+05/28/2026  04:02 PM    <DIR>          ..
+05/28/2026  01:09 PM            34,475 icon128.png
+05/28/2026  01:15 PM               837 icon16.png
+05/28/2026  01:13 PM             5,874 icon48.png
+               3 File(s)         41,186 bytes
+
+     Total Files Listed:
+              45 File(s)        152,616 bytes
+              79 Dir(s)  1,328,113,172,480 bytes free

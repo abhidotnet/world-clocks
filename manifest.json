@@ -1,7 +1,7 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 4,
     "name": "World Clocks",
-    "version": "1.0",
+    "version": "1.1",
     "description": "View multiple world timezones in analog or digital format.",
     "action": {
       "default_popup": "popup.html",
